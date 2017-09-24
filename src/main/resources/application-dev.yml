@@ -17,12 +17,12 @@ server:
           maxThreads: 10
           minSpareThreads: 3
           accesslog:
-            directory: /home/jcala/blog/log/server_log
+            directory: /Users/getinlight/jcala/blog/log/server_log
             pattern: combined
             enabled: true
 logging:
     config: classpath:log4j2.xml
-#    path: /home/jcala/blog/log/spring_log
+#   path: /Users/getinlight/jcala/blog/log/spring_log
 spring:
     velocity:
         cache: true
@@ -47,8 +47,8 @@ spring:
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
         username: root
-        password: root
-        url: jdbc:mysql://127.0.0.1:3306/jcala_blog?useUnicode:true&amp;characterEncoding:UTF-8
+        password: 1234
+        url: jdbc:mysql://127.0.0.1:3306/jcala_blog?useUnicode:true&amp;characterEncoding:UTF-8&useSSL=false
         driverClassName: com.mysql.jdbc.Driver
         schema: classpath:import.sql
         data: classpath:data.sql
